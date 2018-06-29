@@ -1,0 +1,21 @@
+$ cat .gitignore
+#Ignore all files that end with .o or .a
+*.[oa]
+#Exception for lib.a file
+!lib.a
+
+#Ignore all files that end with a tildae
+*~
+
+#Only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+#Ignore all files in the build/ directory
+build/
+
+#Ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+#Igonore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
+
